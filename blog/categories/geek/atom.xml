@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：geek | 独自……]]></title>
+  <link href="http://haoyun.github.com/blog/categories/geek/atom.xml" rel="self"/>
+  <link href="http://haoyun.github.com/"/>
+  <updated>2012-08-24T19:29:57+08:00</updated>
+  <id>http://haoyun.github.com/</id>
+  <author>
+    <name><![CDATA[hy_haoyun]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[为 Octopress 添加中文分类]]></title>
+    <link href="http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress/"/>
+    <updated>2012-08-24T17:35:00+08:00</updated>
+    <id>http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress</id>
+    <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为</p>
+
+<blockquote><p>Sorry, I cannot find /blog/categories/foobar/</p></blockquote>
+
+<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google
+了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。经自己测试，这个方法是可用的。另外的方法参考：<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。</p>
+]]></content>
+  </entry>
+  
+</feed>
