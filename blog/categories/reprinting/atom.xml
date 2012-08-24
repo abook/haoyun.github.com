@@ -4,7 +4,7 @@
   <title><![CDATA[分类：reprinting | 独自……]]></title>
   <link href="http://haoyun.github.com/blog/categories/reprinting/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-24T21:06:04+08:00</updated>
+  <updated>2012-08-24T23:12:13+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -18,16 +18,20 @@
     <link href="http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress/"/>
     <updated>2012-08-24T17:35:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress</id>
-    <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为</p>
-
-<blockquote><p>Sorry, I cannot find /blog/categories/foobar/</p></blockquote>
-
-<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google
-了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
-
-<p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。
-于是乎，标签还是英文的。</p>
-]]></content>
+    <content type="html"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+</head>
+<body>
+<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为 &gt; Sorry, I cannot find /blog/categories/foobar/</p>
+<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google 了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
+<p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。 于是乎，标签还是英文的。</p>
+</body>
+</html>]]></content>
   </entry>
   
 </feed>
