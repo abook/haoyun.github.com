@@ -4,7 +4,7 @@
   <title><![CDATA[独自……]]></title>
   <link href="http://haoyun.github.com/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-24T23:12:13+08:00</updated>
+  <updated>2012-08-25T00:45:23+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[test]]></title>
+    <link href="http://haoyun.github.com/blog/2012/08/24/test/"/>
+    <updated>2012-08-24T22:47:00+08:00</updated>
+    <id>http://haoyun.github.com/blog/2012/08/24/test</id>
+    <content type="html"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <script src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>设 \(G\) 的全体有限阶元素为 \(H\)．设 \(a,b,\in H\) 且 \(ab\) 的阶分别为 \(m,n\) 且记 \(m,n\) 的最小公倍数为 \([m,n]\)．从而易知 \((ab)^{[m,n]}=e\)．从而 \(H\) 对乘法封闭，而且 &quot; H$．如果 \(a \in H\)，那么由 \(a,a^{-1}\) 同阶可知 \(a^{-1} \in H\)． 于是 \(H\) 构成 \(G\) 的子群．&quot;</p>
+<p>\(e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n\)</p>
+</body>
+</html>]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[为 Octopress 添加中文分类]]></title>
