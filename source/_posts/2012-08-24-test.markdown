@@ -1,0 +1,12 @@
+---
+published: false
+layout: post
+title: "test"
+date: 2012-08-24 22:47
+comments: true
+categories: 
+---
+
+设 $G$ 的全体有限阶元素为 $H$．设 $a,b,\in H$ 且 $ab$ 的阶分别为 $m,n$ 且记 $m,n$ 的最小公倍数为 $[m,n]$．从而易知 $(ab)^{[m,n]}=e$．从而 $H$ 对乘法封闭，而且 " \in H$．如果 $a \in H$，那么由 $a,a^{-1}$ 同阶可知 $a^{-1} \in H$． 于是 $H$ 构成 $G$ 的子群．"
+
+$e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n$

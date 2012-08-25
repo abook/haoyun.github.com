@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://haoyun.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: 独自…… 
+subtitle: 独立之精神，自由之思想…… 
+author: hy_haoyun
 simple_search: http://google.com/search
 description:
 
@@ -33,13 +33,20 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
-pygments: false # default python pygments have been replaced by pygments.rb
+category_title_prefix: "分类："
+# markdown: rdiscount
+markdown: pandoc
+pandoc:
+   extensions: 
+      - html5
+      - mathjax=https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML%5fHTMLorMML
+
+pygments: ture # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "下面还有 &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
