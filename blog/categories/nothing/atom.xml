@@ -4,7 +4,7 @@
   <title><![CDATA[分类：nothing | 独自……]]></title>
   <link href="http://haoyun.github.com/blog/categories/nothing/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-25T00:45:23+08:00</updated>
+  <updated>2012-08-25T11:16:05+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -18,21 +18,10 @@
     <link href="http://haoyun.github.com/blog/2012/08/24/hello-world/"/>
     <updated>2012-08-24T13:30:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/24/hello-world</id>
-    <content type="html"><![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-</head>
-<body>
-<p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
+    <content type="html"><![CDATA[<p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
 <p>总体来说，作为一个简单的博客系统，<a href="http://www.octopress.org/">octopress</a> 还是不错的，而且自从熟悉了 <a href="http://daringfireball.net/projects/markdown/">markdown</a> 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 <a href="https://github.com/haoyun/Solutions-to-Introduction-to-Algebra">github</a> 上了。不得不为他的辛勤劳动表示感谢！另外，希望在明年的某个日子，可以把这个项目完成。</p>
 <p>对于 <a href="http://github.com/haoyun/">github</a>，我也是颇为满意的，遗憾的是它不提供免费的私人仓库，当然我也没有什么私密的东西了。从上个月开始，已经逐渐的开始熟悉 github 的使用了。尽管在本地使用 git 已经相当长一段时间了，但是配合远程仓库的使用才刚刚开始，还有很多不熟悉的地方，需要慢慢的摸索，折腾。</p>
-<p>大四了，对我来说这是一个理想逐个破灭的季节。尽管如此，还得继续努力，因为只有这样，即使失败，才能不至于过于后悔。</p>
-</body>
-</html>]]></content>
+<p>大四了，对我来说这是一个理想逐个破灭的季节。尽管如此，还得继续努力，因为只有这样，即使失败，才能不至于过于后悔。</p>]]></content>
   </entry>
   
 </feed>

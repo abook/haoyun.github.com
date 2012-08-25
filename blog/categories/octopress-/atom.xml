@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[独自……]]></title>
-  <link href="http://haoyun.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[分类：octopress, | 独自……]]></title>
+  <link href="http://haoyun.github.com/blog/categories/octopress-/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
   <updated>2012-08-25T11:16:05+08:00</updated>
   <id>http://haoyun.github.com/</id>
@@ -39,8 +39,8 @@
 <p>给几个示例公式</p>
 <p><strong>The Lorenz Equations</strong></p>
 <p>\[\begin{aligned}
-\dot{x} &amp; = \sigma(y-x) &#92;\ 
-dot{y} &amp; = \rho x - y - xz &#92;\ 
+\dot{x} &amp; = \sigma(y-x) \\\ 
+dot{y} &amp; = \rho x - y - xz \\\ 
 \dot{z} &amp; = -\beta z + xy 
 \end{aligned}\]</p>
 <p><strong>The Cauchy-Schwarz Inequality</strong></p>
@@ -48,31 +48,10 @@ dot{y} &amp; = \rho x - y - xz &#92;\
 <p><strong>A Cross Product Formula</strong></p>
 <p>\[\mathbf{V}_1 \times \mathbf{V}_2=
 \begin{vmatrix}
-\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} &#92;\ 
-\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 &#92;\ 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\\ 
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\\ 
 \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 
 \end{vmatrix}\]</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[为 Octopress 添加中文分类]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress/"/>
-    <updated>2012-08-24T17:35:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress</id>
-    <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为 &gt; Sorry, I cannot find /blog/categories/foobar/</p>
-<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google 了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
-<p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。 于是乎，标签还是英文的。</p>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello, World!]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/24/hello-world/"/>
-    <updated>2012-08-24T13:30:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/24/hello-world</id>
-    <content type="html"><![CDATA[<p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
-<p>总体来说，作为一个简单的博客系统，<a href="http://www.octopress.org/">octopress</a> 还是不错的，而且自从熟悉了 <a href="http://daringfireball.net/projects/markdown/">markdown</a> 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 <a href="https://github.com/haoyun/Solutions-to-Introduction-to-Algebra">github</a> 上了。不得不为他的辛勤劳动表示感谢！另外，希望在明年的某个日子，可以把这个项目完成。</p>
-<p>对于 <a href="http://github.com/haoyun/">github</a>，我也是颇为满意的，遗憾的是它不提供免费的私人仓库，当然我也没有什么私密的东西了。从上个月开始，已经逐渐的开始熟悉 github 的使用了。尽管在本地使用 git 已经相当长一段时间了，但是配合远程仓库的使用才刚刚开始，还有很多不熟悉的地方，需要慢慢的摸索，折腾。</p>
-<p>大四了，对我来说这是一个理想逐个破灭的季节。尽管如此，还得继续努力，因为只有这样，即使失败，才能不至于过于后悔。</p>]]></content>
   </entry>
   
 </feed>

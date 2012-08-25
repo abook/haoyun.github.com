@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>独自……</title>
+  <title>MathJax in Octopress with Pandoc - 独自……</title>
   <meta name="author" content="hy_haoyun">
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://haoyun.github.com/">
+  <link rel="canonical" href="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,15 +67,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">MathJax in Octopress With Pandoc</a></h1>
+      <h1 class="entry-title">MathJax in Octopress With Pandoc</h1>
     
     
       <p class="meta">
@@ -98,7 +95,7 @@
   </header>
 
 
-  <div class="entry-content"><p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
+<div class="entry-content"><p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
 <p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上 gem <q>pandoc-ruby</q>, <q>~&gt; 0.5.0</q></p>
 <p>这样，jekyll 就能找到 pandoc-ruby 了。另外也可以不用卸载在重装 jekyll，只需要按照上面文章里所述的原理修改 markdown.rb 文件即可。</p>
 <p>另外的一个问题是，如何配置 pandoc 的命令行参数，特别的，我想更改 MathJax 的 CDN 为豆瓣上的那个，服务器在国内毕竟快一些好一些。可是完全不懂 YAML 的语法，所以只能摸索，最可恨的网址里面含有下划线，jekyll 会把它处理成减号，经过不断的实验（没有搜到可用的资料），发下下面的两种方法是可行的。</p>
@@ -132,59 +129,16 @@ dot{y} &amp; = \rho x - y - xz &#92;\
 \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 &#92;\ 
 \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 
 \end{vmatrix}\]</p></div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/24/chinese-category-for-octopress/">为 Octopress 添加中文分类</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">hy_haoyun</span></span>
 
-<time datetime="2012-08-24T17:35:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为 &gt; Sorry, I cannot find /blog/categories/foobar/</p>
-<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google 了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
-<p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。 于是乎，标签还是英文的。</p></div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/24/hello-world/">Hello, World!</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -196,29 +150,38 @@ dot{y} &amp; = \rho x - y - xz &#92;\
   
 
 
-<time datetime="2012-08-24T13:30:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2012</time>
-        
-      </p>
+<time datetime="2012-08-25T09:32:00+08:00" pubdate data-updated="true">Aug 25<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek-/'>geek,</a>, <a class='category' href='/blog/categories/octopress-/'>octopress,</a>, <a class='category' href='/blog/categories/reprinting/'>reprinting</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
-<p>总体来说，作为一个简单的博客系统，<a href="http://www.octopress.org/">octopress</a> 还是不错的，而且自从熟悉了 <a href="http://daringfireball.net/projects/markdown/">markdown</a> 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 <a href="https://github.com/haoyun/Solutions-to-Introduction-to-Algebra">github</a> 上了。不得不为他的辛勤劳动表示感谢！另外，希望在明年的某个日子，可以把这个项目完成。</p>
-<p>对于 <a href="http://github.com/haoyun/">github</a>，我也是颇为满意的，遗憾的是它不提供免费的私人仓库，当然我也没有什么私密的东西了。从上个月开始，已经逐渐的开始熟悉 github 的使用了。尽管在本地使用 git 已经相当长一段时间了，但是配合远程仓库的使用才刚刚开始，还有很多不熟悉的地方，需要慢慢的摸索，折腾。</p>
-<p>大四了，对我来说这是一个理想逐个破灭的季节。尽管如此，还得继续努力，因为只有这样，即使失败，才能不至于过于后悔。</p></div>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/" data-via="" data-counturl="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/" >Tweet</a>
   
   
-
-
-    </article>
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/08/24/chinese-category-for-octopress/" title="Previous Post: 为 Octopress 添加中文分类">&laquo; 为 Octopress 添加中文分类</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -247,6 +210,7 @@ dot{y} &amp; = \rho x - y - xz &#92;\
 
   
 </aside>
+
 
     </div>
   </div>
