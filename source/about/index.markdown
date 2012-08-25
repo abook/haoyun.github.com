@@ -2,7 +2,7 @@
 layout: page
 date: 2012-08-24 13:58
 comments: true
-sharing: true
+sharing: false
 footer: true
 ---
 
