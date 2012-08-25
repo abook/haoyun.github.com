@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress, | 独自……]]></title>
   <link href="http://haoyun.github.com/blog/categories/octopress-/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-25T17:08:25+08:00</updated>
+  <updated>2012-08-25T23:13:02+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -18,8 +18,9 @@
     <link href="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/"/>
     <updated>2012-08-25T09:32:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc</id>
-    <content type="html"><![CDATA[<p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
-<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上 gem 'pandoc-ruby', '~&gt; 0.5.0'</p>
+    <content type="html"><![CDATA[<p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
+<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上</p>
+<pre><code>gem &#39;pandoc-ruby&#39;, &#39;~&gt; 0.5.0&#39;</code></pre>
 <p>这样，jekyll 就能找到 pandoc-ruby 了。另外也可以不用卸载在重装 jekyll，只需要按照上面文章里所述的原理修改 markdown.rb 文件即可。</p>
 <!--more-->
 

@@ -9,8 +9,8 @@
   <meta name="author" content="hy_haoyun">
 
   
-  <meta name="description" content="又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 pandoc，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 MathJax 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。
-事实上，只要把 &hellip;">
+  <meta name="description" content="又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 pandoc，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 MathJax 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。
+事实上，只要把 markdown &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,8 +122,9 @@
   </header>
 
 
-<div class="entry-content"><p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
-<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上 gem &#8216;pandoc-ruby&#8217;, &#8216;~&gt; 0.5.0&#8217;</p>
+<div class="entry-content"><p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
+<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上</p>
+<pre><code>gem &#39;pandoc-ruby&#39;, &#39;~&gt; 0.5.0&#39;</code></pre>
 <p>这样，jekyll 就能找到 pandoc-ruby 了。另外也可以不用卸载在重装 jekyll，只需要按照上面文章里所述的原理修改 markdown.rb 文件即可。</p>
 <!--more-->
 
@@ -263,6 +264,9 @@ dot{y} &amp; = \rho x - y - xz &#92;\
   <footer role="contentinfo"><p>
 <a rel="vim" href="http://www.vim.org/">
     <img alt="created with Vim" style="border-width:0" src="/images/vim_created.gif" />
+</a>
+<a href="http://www.mathjax.org/">
+    <img title="Powered by MathJax" src="http://cdn.mathjax.org/mathjax/badge/badge.gif" style="border-width:0" height="32px" alt="Powered by MathJax" />
 </a>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
     <img alt="Creative Commons License" style="border-width:0" src="/images/88x31.png" />
