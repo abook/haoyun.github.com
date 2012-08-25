@@ -4,7 +4,7 @@
   <title><![CDATA[独自……]]></title>
   <link href="http://haoyun.github.com/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-25T11:27:09+08:00</updated>
+  <updated>2012-08-25T11:45:10+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -19,7 +19,7 @@
     <updated>2012-08-25T09:32:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc</id>
     <content type="html"><![CDATA[<p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 \(\LaTeX{}\) 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
-<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上 gem <q>pandoc-ruby</q>, <q>~&gt; 0.5.0</q></p>
+<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile 即可，即给里面添加上 gem &#8216;pandoc-ruby&#8217;, &#8216;~&gt; 0.5.0&#8217;</p>
 <p>这样，jekyll 就能找到 pandoc-ruby 了。另外也可以不用卸载在重装 jekyll，只需要按照上面文章里所述的原理修改 markdown.rb 文件即可。</p>
 <p>另外的一个问题是，如何配置 pandoc 的命令行参数，特别的，我想更改 MathJax 的 CDN 为豆瓣上的那个，服务器在国内毕竟快一些好一些。可是完全不懂 YAML 的语法，所以只能摸索，最可恨的网址里面含有下划线，jekyll 会把它处理成减号，经过不断的实验（没有搜到可用的资料），发下下面的两种方法是可行的。</p>
 <pre><code>pandoc:
@@ -59,7 +59,10 @@ dot{y} &amp; = \rho x - y - xz &#92;\
     <link href="http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress/"/>
     <updated>2012-08-24T17:35:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress</id>
-    <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为 &gt; Sorry, I cannot find /blog/categories/foobar/</p>
+    <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为</p>
+<blockquote>
+<p>Sorry, I cannot find /blog/categories/foobar/</p>
+</blockquote>
 <p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google 了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
 <p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。 于是乎，标签还是英文的。</p>]]></content>
   </entry>
