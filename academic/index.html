@@ -9,7 +9,7 @@
   <meta name="author" content="hy_haoyun">
 
   
-  <meta name="description" content=" Comming Soon …… Aug 26th, 2012 Recent Posts Pandoc 及 MathJax 在 Octopress 中折腾纪实 为 Octopress 添加中文分类 Hello, World! ">
+  <meta name="description" content="Comming Soon …… Aug 26th, 2012 Recent Posts Pandoc 及 MathJax 在 Octopress 中折腾纪实 为 Octopress 添加中文分类 Hello, World! GitHub Repos Status updating... @ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -147,9 +147,34 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/haoyun">@haoyun</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
 
-
-
+        github.showRepos({
+            user: 'haoyun',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
   
