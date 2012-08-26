@@ -4,7 +4,7 @@
   <title><![CDATA[分类：octopress | 独自……]]></title>
   <link href="http://haoyun.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-26T13:31:34+08:00</updated>
+  <updated>2012-08-26T13:53:43+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -18,9 +18,9 @@
     <link href="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/"/>
     <updated>2012-08-25T09:32:00+08:00</updated>
     <id>http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc</id>
-    <content type="html"><![CDATA[<p>又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
+    <content type="html"><![CDATA[<p>又是一晚上的折腾，把 <a href="http://jekyllrb.com/">jekyll</a> 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
 
-<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile
+<p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 <a href="https://github.com/alphabetum/pandoc-ruby">pandoc-ruby</a>，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 <code>Gemfile</code>
 即可，即给里面添加上</p>
 
 <pre><code>gem 'pandoc-ruby', '~&gt; 0.5.0'
@@ -71,7 +71,7 @@
 ./custom/_colors.scss://$footer-bg-front: image-url('noise.png'); 显然，问题出在 `_theme.scss` 这个文件上了。算是一个小小的冲突。修改一下就好了。
 </code></pre>
 
-<p>万恶的是，就在此时，我在想怎么修改的时候，发现了<a href="http://chen.yanping.me/cn/blog/2012/03/10/octopress-with-latex/">这篇</a>文章的最下面有一个链接，给我了所所遇到的问题的解决方案！折腾的意义在哪里？！
+<p>万恶的是，就在此时，我在想怎么修改的时候，发现了[这篇][octopresslatx]文章的最下面有一个链接，给我了所所遇到的问题的解决方案！折腾的意义在哪里？！
 照着修改就好了。</p>
 
 <p>给几个示例公式</p>
@@ -104,6 +104,16 @@
 \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 
 \end{vmatrix}
  %]]&gt;</script>
+
+<h2 id="ps">PS:</h2>
+
+<p>折腾了两天，发现好多东西还是有很多问题，折腾的结果是：</p>
+
+<ul>
+  <li>发现了很多前在的问题。</li>
+  <li>找到了解决绝大部分问题的不优雅的方法。</li>
+  <li>放弃 pandoc，改投 <a href="http://kramdown.rubyforge.org/">kramdown</a>。</li>
+</ul>
 
 ]]></content>
   </entry>
