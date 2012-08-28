@@ -3,14 +3,15 @@ layout: post
 title: "Pandoc 及 MathJax 在 Octopress 中折腾纪实"
 date: 2012-08-25 09:32
 comments: true
-categories: octopress, geek, reprinting
+categories: [octopress, geek, reprinting]
 ---
 
-又是一晚上的折腾，把 jekyll 默认的 markdown 语法解释器换成了更强大的 [pandoc](http://johnmacfarlane.net/pandoc/)，然后又修改了部分 CSS，作为一个狂热的 $\LaTeX{}$ 爱好者，自然要添加 [MathJax](http://www.mathjax.org/) 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。
+又是一晚上的折腾，把 [jekyll][jekyll] 默认的 markdown 语法解释器换成了更强大的 [pandoc][pandoc]，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 [MathJax][mathjax] 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。
 
-事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 [为 Jekyll 装上瑞士军刀 Pandoc](http://yangzetian.github.com/2012/04/15/jekyll-pandoc/)，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 pandoc-ruby，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 Gemfile
+事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 [为 Jekyll 装上瑞士军刀 Pandoc][jekyllpandoc]，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 [pandoc-ruby][pr]，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 `Gemfile`
 即可，即给里面添加上
-   gem 'pandoc-ruby', '~> 0.5.0'
+
+    gem 'pandoc-ruby', '~> 0.5.0'
 
 这样，jekyll 就能找到 pandoc-ruby 了。另外也可以不用卸载在重装 jekyll，只需要按照上面文章里所述的原理修改 markdown.rb 文件即可。
 
@@ -57,30 +58,54 @@ categories: octopress, geek, reprinting
     ./custom/_colors.scss://$footer-bg-front: image-url('noise.png');
 显然，问题出在 `_theme.scss` 这个文件上了。算是一个小小的冲突。修改一下就好了。
 
-万恶的是，就在此时，我在想怎么修改的时候，发现了[这篇](http://chen.yanping.me/cn/blog/2012/03/10/octopress-with-latex/)文章的最下面有一个链接，给我了所所遇到的问题的解决方案！折腾的意义在哪里？！
+万恶的是，就在此时，我在想怎么修改的时候，发现了[这篇][octopresslatx]文章的最下面有一个链接，给我了所所遇到的问题的解决方案！折腾的意义在哪里？！
 照着修改就好了。
     
 给几个示例公式
 
 **The Lorenz Equations**
 
-
-$$\begin{aligned}
-\dot{x} & = \sigma(y-x) \\\ 
-dot{y} & = \rho x - y - xz \\\ 
+$$
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
 \dot{z} & = -\beta z + xy 
-\end{aligned}$$
+\end{aligned}
+$$
 
 **The Cauchy-Schwarz Inequality**
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
 
 **A Cross Product Formula**
 
-$$\mathbf{V}_1 \times \mathbf{V}_2=
+$$
+\mathbf{V}_1 \times \mathbf{V}_2=
 \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\\ 
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\\ 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
 \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 
-\end{vmatrix}$$
+\end{vmatrix}
+$$
 
+
+
+PS:
+---
+
+折腾了两天，发现好多东西还是有很多问题，折腾的结果是：
+
+* 发现了很多前在的问题。
+* 找到了解决绝大部分问题的不优雅的方法。
+* 放弃 pandoc，改投 [kramdown][kramdown]。
+
+
+[jekyll]: http://jekyllrb.com/
+[pandoc]: http://johnmacfarlane.net/pandoc/
+[mathjax]: http://www.mathjax.org/
+[jekyllpandoc]: http://yangzetian.github.com/2012/04/15/jekyll-pandoc/
+[pr]: https://github.com/alphabetum/pandoc-ruby
+[octopresslatex]: http://chen.yanping.me/cn/blog/2012/03/10/octopress-with-latex/
+[kramdown]: http://kramdown.rubyforge.org/

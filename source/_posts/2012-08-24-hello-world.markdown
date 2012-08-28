@@ -6,7 +6,6 @@ comments: true
 categories: [nothing] 
 ---
 
-
 按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。
 
 总体来说，作为一个简单的博客系统，[octopress](http://www.octopress.org/) 还是不错的，而且自从熟悉了 [markdown](http://daringfireball.net/projects/markdown/) 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 [github](https://github.com/haoyun/Solutions-to-Introduction-to-Algebra)

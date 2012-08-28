@@ -3,7 +3,7 @@ layout: post
 title: "为 Octopress 添加中文分类"
 date: 2012-08-24 17:35
 comments: true
-categories: [octopress, geek, reprinting]
+categories: [octopress,  geek, reprinting]
 ---
 
 今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为
