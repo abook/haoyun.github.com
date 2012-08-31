@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>分类：reprinting - 独自……</title>
+  <title>为 Octopress 添加中文分类 - 独自……</title>
   <meta name="author" content="hy_haoyun">
 
   
-  <meta name="description" content="Category: reprinting">
+  <meta name="description" content="今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为 Sorry, I cannot find /blog/categories/foobar/ 尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,13 +18,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://haoyun.github.comblog/categories/reprinting/">
+  <link rel="canonical" href="http://haoyun.github.com/blog/2012-08-24-chinese-category-for-octopress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="独自……" type="application/atom+xml">
+  <link href="" rel="alternate" title="独自……" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
 
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
@@ -96,51 +96,104 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">分类：reprinting</h1>
+    
+      <h1 class="entry-title">为 Octopress 添加中文分类</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-24T17:35:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为</p>
 
-  
-  <h2>2012</h2>
+<blockquote>
+  <p>Sorry, I cannot find /blog/categories/foobar/</p>
+</blockquote>
 
-<article>
-  
-<h1><a href="/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">Pandoc 及 MathJax 在 Octopress 中折腾纪实</a></h1>
-<time datetime="2012-08-25T09:32:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>25</span> <span class='year'>2012</span></time>
+<p>尽管我有写个纯英文博客的打算，但是作为一个完美主义者，遇到问题，无论是否可以回避，我就是喜欢把它解决了。当然，我自己的水平是不够的，所以就 google
+了。很快找到了答案，为了避免版权纠纷，不再此全文转载，如果遇到类似的麻烦，请猛击<a href="http://geron.heroku.com/blog/2012/03/octo-cate-cn-spo">这里</a>，也可以直接到作者的<a href="https://github.com/geron-cn/octopress-study">github</a>进行下载。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/geek/'>geek</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/reprinting/'>reprinting</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/08/24/chinese-category-for-octopress/">为 Octopress 添加中文分类</a></h1>
-<time datetime="2012-08-24T17:35:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>24</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/geek/'>geek</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/reprinting/'>reprinting</a></span>
-</footer>
-
-
-</article>
-
+<p>经自己测试，这个方法在本地是可用的，但是在 GitHub 上不可用，但貌似在 heroku 上是可用的，可是总不能转移阵地吧。于是找到了另外的解决方案，在<a href="http://blog.sprabbit.com/blog/2012/03/23/octopress/">这里</a>。但是很可惜，我暂时不想折腾了。
+于是乎，标签还是英文的。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">hy_haoyun</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-24T17:35:00+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>geek</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/repost/'>repost</a>
+  
+</span>
+
+
+    </p>
+    
+      <!--
+<div class="sharing">
+  
+  
+  
+</div>
+-->
+<div class="bshare-custom"><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a><a title="分享到腾讯微博" class="bshare-qqmb" href="javascript:void(0);"></a><a title="分享到人人网" class="bshare-renren" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone" href="javascript:void(0);"></a><a title="分享到豆瓣" class="bshare-douban" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012-08-24-hello-world/" title="Previous Post: Hello, World!">&laquo; Hello, World!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012-08-25-mathjax-in-octopress-with-pandoc/" title="Next Post: Pandoc 及 MathJax 在 Octopress 中折腾纪实">Pandoc 及 MathJax 在 Octopress 中折腾纪实 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
+  <section>
+    <h1>评论</h1>
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1672975" async=""></script>
+  </section>
 </div>
 
 <aside class="sidebar">
@@ -150,15 +203,15 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">Pandoc 及 MathJax 在 Octopress 中折腾纪实</a>
+        <a href="/blog/2012-08-25-mathjax-in-octopress-with-pandoc/">Pandoc 及 MathJax 在 Octopress 中折腾纪实</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/08/24/chinese-category-for-octopress/">为 Octopress 添加中文分类</a>
+        <a href="/blog/2012-08-24-chinese-category-for-octopress/">为 Octopress 添加中文分类</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/08/24/hello-world/">Hello, World!</a>
+        <a href="/blog/2012-08-24-hello-world/">Hello, World!</a>
       </li>
     
   </ul>
@@ -184,7 +237,7 @@
 
         github.showRepos({
             user: 'haoyun',
-            count: 0,
+            count: 3,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -224,16 +277,6 @@
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[独自……]]></title>
   <link href="http://haoyun.github.com/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-26T16:54:48+08:00</updated>
+  <updated>2012-08-31T12:02:47+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Pandoc 及 MathJax 在 Octopress 中折腾纪实]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/"/>
+    <link href="http://haoyun.github.com/blog/2012-08-25-mathjax-in-octopress-with-pandoc/"/>
     <updated>2012-08-25T09:32:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc</id>
+    <id>http://haoyun.github.com/blog/mathjax-in-octopress-with-pandoc</id>
     <content type="html"><![CDATA[<p>又是一晚上的折腾，把 <a href="http://jekyllrb.com/">jekyll</a> 默认的 markdown 语法解释器换成了更强大的 <a href="http://johnmacfarlane.net/pandoc/">pandoc</a>，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 <a href="http://www.mathjax.org/">MathJax</a> 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。</p>
 
 <p>事实上，只要把 markdown 的解释器换成 pandoc，而 pandoc 支持 MathJax，所以一切都是自然的事情。但是，网上的教程自己实践起来总是要费一些功夫的。首先参考这篇文章 <a href="http://yangzetian.github.com/2012/04/15/jekyll-pandoc/">为 Jekyll 装上瑞士军刀 Pandoc</a>，其基本内容没有错误，但在我这里，即使已经通过自己的用户以及 root 用户都安装了 <a href="https://github.com/alphabetum/pandoc-ruby">pandoc-ruby</a>，它却总是提示没有安装，非常无奈，最后发现只要修改网站根目录下的 <code>Gemfile</code>
@@ -61,9 +61,12 @@
 <pre><code>body &gt; div &gt; div {
         background: url("/images/noise.png?1345858216") repeat scroll left top #F8F8F8;
             border-right: 1px solid #E0E0E0;
-} 惹的祸。接下来请出强大的 GREP
+}
+</code></pre>
 
-# find . -name \* -type f -print | xargs grep "noise.png"
+<p>惹的祸。接下来请出强大的 GREP</p>
+
+<pre><code># find . -name \* -type f -print | xargs grep "noise.png"
 ./base/_theme.scss:$noise-bg: image-url('noise.png') top left !default;
 ./base/_theme.scss:$nav-bg-front: image-url('noise.png') !default;
 ./base/_theme.scss:$footer-bg-front: image-url('noise.png') !default;
@@ -120,9 +123,9 @@
   
   <entry>
     <title type="html"><![CDATA[为 Octopress 添加中文分类]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress/"/>
+    <link href="http://haoyun.github.com/blog/2012-08-24-chinese-category-for-octopress/"/>
     <updated>2012-08-24T17:35:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/24/chinese-category-for-octopress</id>
+    <id>http://haoyun.github.com/blog/chinese-category-for-octopress</id>
     <content type="html"><![CDATA[<p>今天搭建好了博客，本打算专心学习，却又没有忍住，有回来折腾了。果然立即便发现了问题：octopress 的自动分类对于中文是不起作用的，提示为</p>
 
 <blockquote>
@@ -139,9 +142,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello, World!]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/24/hello-world/"/>
+    <link href="http://haoyun.github.com/blog/2012-08-24-hello-world/"/>
     <updated>2012-08-24T13:30:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/24/hello-world</id>
+    <id>http://haoyun.github.com/blog/hello-world</id>
     <content type="html"><![CDATA[<p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
 
 <p>总体来说，作为一个简单的博客系统，<a href="http://www.octopress.org/">octopress</a> 还是不错的，而且自从熟悉了 <a href="http://daringfireball.net/projects/markdown/">markdown</a> 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 <a href="https://github.com/haoyun/Solutions-to-Introduction-to-Algebra">github</a>

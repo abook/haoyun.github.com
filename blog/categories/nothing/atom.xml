@@ -4,7 +4,7 @@
   <title><![CDATA[分类：nothing | 独自……]]></title>
   <link href="http://haoyun.github.com/blog/categories/nothing/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-08-26T16:54:48+08:00</updated>
+  <updated>2012-08-31T12:02:47+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello, World!]]></title>
-    <link href="http://haoyun.github.com/blog/2012/08/24/hello-world/"/>
+    <link href="http://haoyun.github.com/blog/2012-08-24-hello-world/"/>
     <updated>2012-08-24T13:30:00+08:00</updated>
-    <id>http://haoyun.github.com/blog/2012/08/24/hello-world</id>
+    <id>http://haoyun.github.com/blog/hello-world</id>
     <content type="html"><![CDATA[<p>按照惯例，先发一个 Hello World，以此说明，这个博客系统已经可以使用了。这其中艰辛的折腾过程，如果有机会的话，我会单独写文章来介绍这一过程，像网上众多的文章一样，用来误导大众。</p>
 
 <p>总体来说，作为一个简单的博客系统，<a href="http://www.octopress.org/">octopress</a> 还是不错的，而且自从熟悉了 <a href="http://daringfireball.net/projects/markdown/">markdown</a> 的语法之后，无论写什么东西，都改成 markdown 了，甚至包括那些 LaTeX 文档。说到 LaTeX，今天 w_hongxin 发来了录入完毕的《代数学引论》前两章的习题解答，我稍作修改，已经提交到 <a href="https://github.com/haoyun/Solutions-to-Introduction-to-Algebra">github</a>

@@ -18,13 +18,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">
+  <link rel="canonical" href="http://haoyun.github.com/blog/2012-08-25-mathjax-in-octopress-with-pandoc/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="独自……" type="application/atom+xml">
+  <link href="" rel="alternate" title="独自……" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
 
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
@@ -166,9 +166,12 @@
 <pre><code>body &gt; div &gt; div {
         background: url("/images/noise.png?1345858216") repeat scroll left top #F8F8F8;
             border-right: 1px solid #E0E0E0;
-} 惹的祸。接下来请出强大的 GREP
+}
+</code></pre>
 
-# find . -name \* -type f -print | xargs grep "noise.png"
+<p>惹的祸。接下来请出强大的 GREP</p>
+
+<pre><code># find . -name \* -type f -print | xargs grep "noise.png"
 ./base/_theme.scss:$noise-bg: image-url('noise.png') top left !default;
 ./base/_theme.scss:$nav-bg-front: image-url('noise.png') !default;
 ./base/_theme.scss:$footer-bg-front: image-url('noise.png') !default;
@@ -247,7 +250,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/geek/'>geek</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/reprinting/'>reprinting</a>
+    <a class='category' href='/blog/categories/geek/'>geek</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/repost/'>repost</a>
   
 </span>
 
@@ -256,8 +259,6 @@
     
       <!--
 <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/" data-via="" data-counturl="http://haoyun.github.com/blog/2012/08/25/mathjax-in-octopress-with-pandoc/" >Tweet</a>
   
   
   
@@ -268,7 +269,7 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/08/24/chinese-category-for-octopress/" title="Previous Post: 为 Octopress 添加中文分类">&laquo; 为 Octopress 添加中文分类</a>
+        <a class="basic-alignment left" href="/blog/2012-08-24-chinese-category-for-octopress/" title="Previous Post: 为 Octopress 添加中文分类">&laquo; 为 Octopress 添加中文分类</a>
       
       
     </p>
@@ -289,15 +290,15 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/08/25/mathjax-in-octopress-with-pandoc/">Pandoc 及 MathJax 在 Octopress 中折腾纪实</a>
+        <a href="/blog/2012-08-25-mathjax-in-octopress-with-pandoc/">Pandoc 及 MathJax 在 Octopress 中折腾纪实</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/08/24/chinese-category-for-octopress/">为 Octopress 添加中文分类</a>
+        <a href="/blog/2012-08-24-chinese-category-for-octopress/">为 Octopress 添加中文分类</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/08/24/hello-world/">Hello, World!</a>
+        <a href="/blog/2012-08-24-hello-world/">Hello, World!</a>
       </li>
     
   </ul>
@@ -323,7 +324,7 @@
 
         github.showRepos({
             user: 'haoyun',
-            count: 0,
+            count: 3,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -363,16 +364,6 @@
 
 
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 
