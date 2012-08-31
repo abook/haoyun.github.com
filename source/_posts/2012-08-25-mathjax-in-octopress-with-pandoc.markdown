@@ -3,7 +3,7 @@ layout: post
 title: "Pandoc 及 MathJax 在 Octopress 中折腾纪实"
 date: 2012-08-25 09:32
 comments: true
-categories: [octopress, geek, reprinting]
+categories: [octopress, geek, repost]
 ---
 
 又是一晚上的折腾，把 [jekyll][jekyll] 默认的 markdown 语法解释器换成了更强大的 [pandoc][pandoc]，然后又修改了部分 CSS，作为一个狂热的 LaTeX 爱好者，自然要添加 [MathJax][mathjax] 支持。折腾是无止境的，但从另一个可能的角度来说，一次折腾，终身受益。
@@ -48,6 +48,7 @@ categories: [octopress, geek, reprinting]
             background: url("/images/noise.png?1345858216") repeat scroll left top #F8F8F8;
                 border-right: 1px solid #E0E0E0;
     }
+
 惹的祸。接下来请出强大的 GREP
 
     # find . -name \* -type f -print | xargs grep "noise.png"
