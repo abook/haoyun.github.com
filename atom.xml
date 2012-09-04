@@ -4,7 +4,7 @@
   <title><![CDATA[独自……]]></title>
   <link href="http://haoyun.github.com/atom.xml" rel="self"/>
   <link href="http://haoyun.github.com/"/>
-  <updated>2012-09-01T21:52:58+08:00</updated>
+  <updated>2012-09-04T20:10:04+08:00</updated>
   <id>http://haoyun.github.com/</id>
   <author>
     <name><![CDATA[hy_haoyun]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[新学期开始了]]></title>
+    <link href="http://haoyun.github.com/blog/2012-09-01-new-semester/"/>
+    <updated>2012-09-01T23:26:00+08:00</updated>
+    <id>http://haoyun.github.com/blog/new-semester</id>
+    <content type="html"><![CDATA[<p>这是一个最俗的主题，新学期开始了。可是作为一个大四的学分远未修够的数学系学生，已经没有数学课可选了。当然这都是当初欠下的债。唯一可以放心的是领导发话，只要确实在做东西，不是浪费时间，肯定是能够毕业的。所以果断选择通过讨论班的方式而不是蹭课的方式来度过这一个学期了。</p>
+
+<p>这个学期给自己安排了很多很多的任务：三个讨论班，PDE、同调论和理论力学，还要蹭一门量子力学的课。值得一说的是量子力学的课，是钱伯初老先生上的，感觉非常的好。这个以后再细说吧。还有两场 TOEFL。我有一个计划，如果不出国的话，要在三年之内把物理系本科生的课程全部学完，不仅仅是一个计划，而是一个重要的目标。</p>
+
+<p>在大家研究生都有着落的时候，我还是没有确定能够去哪里。但是，我已经深刻的感受到，这里的气氛非常的不好，不友好。无论如何，一定要离开交大，没有任何眷恋。因为失败，所以得有一个新的开始。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Pandoc 及 MathJax 在 Octopress 中折腾纪实]]></title>
