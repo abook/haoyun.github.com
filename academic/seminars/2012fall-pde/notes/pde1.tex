@@ -1,0 +1,284 @@
+\documentclass{simplenotes}
+\topic{Partial Differential Equations}
+\season{Fall 2012}
+\date{September 4, 2012}
+\speaker{Yun Hao}
+\title{Lecture 1}
+
+
+
+%=========
+\DeclareMathOperator{\Curl}{curl}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Tr}{tr}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\rho}{\varrho}
+\newtheorem{exercise}{Exercise}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{definition}[Partial Differential Equations (PDEs)]
+...
+\end{definition}
+
+However we only concentrate on those questions that natually occur in varaous applications, such as physics and other sciences, engineering and economics.
+
+Now let's give some example of PDEs.
+
+\begin{example}
+\begin{align}
+&\Delta u:= \sum_{i=1}^d u_{x^ix^i} =0 \tag{Laplace Equation}\\
+&\Delta u =f \tag{Poisson Equation}\\
+&u_t =\Delta u \tag{Heat Equation}\\
+&u_{tt} =\Delta u \tag{Wave Equation}\\
+&(1+u_y^2)u_{xx}-2u_xu_yu_{xy}+(1+u_x^2)u_{yy}=0 \tag{Minimal Surface Equation}\\
+&\begin{cases}
+\Div B =0\\
+B_t - \Curl B =0\\
+\Div E = 4\pi\rho\\
+E_t-\Curl E= -4\pi j
+\end{cases}\tag{Maxwell Equations}\\
+&\det(u_{x^ix^j})=f \tag{Monge-Ampere Equation}\\
+&u_t-6uu_x+u_{xxx}=0 \tag{Koreweg-de Vires Equation}
+\end{align}
+\end{example}
+
+\subsection{Clssification}
+\paragraph{By of linear of nonlinear}
+
+\begin{itemize}[nosep]
+\item Linear equations
+\item Non-linear equations
+\begin{itemize}[nosep]
+\item
+Quasilinear equations
+\item
+Sminilinear equations
+\end{itemize}
+\end{itemize}
+
+\paragraph{By order}
+\begin{itemize}[nosep]
+\item First order
+\item Second order
+\begin{itemize}[nosep]
+\item
+elliptic
+\item
+parabolic
+\item
+hyperbolic
+\item
+etc.
+\end{itemize}
+\item Higher order
+\end{itemize}
+
+\begin{exercise}
+Classify all the equations above.
+\end{exercise}
+
+\begin{exercise}
+Give more equations and try to classify them according to the standard given above.
+\end{exercise}
+
+\section{What will we learn form this textbook}
+
+\paragraph{Question 1}
+How to find a solution of elliptic PDES.
+
+In general we have the following five method:
+\begin{itemize}
+\item[0] Write down an \emph{eplicit} formula for the solution in terms of the given data.
+
+具有极大的局限性。仅仅对少数方程有效。
+\item[I] Solve a sequence of auxiliary problems that \emph{approximate} the given one and show ...
+
+偏微分方程可以看作一个无穷维函数空间上的函数方程，从而使用有限维空间逼近。
+
+\item[II] Start any wher, with the required constrains satisfied, and let things \emph{flow} toward a solution.
+
+解是一个扩散过程的渐进平衡态。
+
+\item[III] Solve an \emph{optimization} problem, and ...
+
+变分问题的极值问题，既是偏微分方程的一个来源，也是种解方程的方法。
+
+\item[IV] \emph{Connect} what you want to know to what you already know, that is the \emph{continuity method}.
+
+由已知问题连续的过渡到未知问题。
+\end{itemize}
+
+\paragraph{Question 2}
+Regularity of Solutions and Uniqueness of Solutions.
+
+generalized solutions  vs. soomth solutions
+
+\paragraph{}
+The understanding of the above summary will be deepen after our study. 
+
+
+\begin{quotation}
+In any case, it's usually not very efficient to read a mathematical textbook linearly, and the reader should rather try first to grasp the central statements.
+\end{quotation}
+
+可以参考 MIT 公开课程的教学计划。地址见：\url{haoyun.github.com/academic/seminars/2012fall-pde/}
+
+\section{Hamonic Fucntions}
+
+\begin{definition}[Harmonic functions]
+A function  $u$ on a domain $\Omega$ that satisfies the Laplace Equation:
+\[\Delta u = 0\]
+is called a harmonic function on $\Omega$.
+\end{definition}
+
+\begin{remark}
+All harmonic functions constitue a linear space. Simple varification will prove this. A higher view of point is that all harmonic fuctions is the kernel of Laplace operator, which is a linear operator.
+\end{remark}
+
+\begin{example}
+Real and imaginary part of an complex analytic function.
+(As an exercise, give some examples, and note that the derivative of an analytic functions is also analytic, thus we can find even more desired functions.) This is a consequence of Cauthy-Riemann Equation.
+\end{example}
+
+\begin{remark}
+This view of point enable us to solve some problems on harmonic functions using the mathod and theories developped in Complex Analysis. We will give some example later.
+\end{remark}
+
+\begin{lemma}
+Laplace operator is rotation-invariant.
+\begin{proof}
+Note that $\Delta u(x) = \Tr(H[u(x)])$, where $H[u(x)]$ is the Hessein matrix of u(x).
+\[\Delta_x u(A(x-y)+y)=\Tr(A^T H[u(A(x-y)+y)] A)\]
+\end{proof}
+Another proof?
+\end{lemma}
+
+Taking into consideration that $\Delta$ is rotation-invariant, we may suppose that the solution of $\Delta u$ is also rotation-invariant, or radical, i.e.,
+\[u(x) = \phi(r), \text{ where } r=|x-y| \text{ with fixed } y\]
+Then $\Delta u =0$ can be written as 
+\[\phi '' (r) +\frac{d-1}{r} \phi(r) =0\]
+Solve the second order ordinary differential eqution we obtain that 
+\[\phi'(r) =Cr^{1-d}\]
+and then
+\[\phi(r) =\begin{cases}
+C\log r & d=2\\
+\frac{C}{2-d}r^{2-d} &d>r
+\end{cases}
+\]
+Where C is a constant.
+
+\begin{definition}[Fundamental Solution]
+...
+\end{definition}
+
+\begin{lemma}[Divergence Theorem]
+...
+\end{lemma}
+
+
+\begin{lemma}[Green's Formula]
+...
+\end{lemma}
+
+\begin{lemma}[Lebesgue Domainent Convergence Theorem]
+...
+\end{lemma}
+
+\begin{lemma}[Lebesgue Theorem]
+...
+\end{lemma}
+
+\begin{theorem}[Green Representation Formula]
+\[u(y) = \int_{\partial \Omega} \left( u \frac{\partial \Gamma}{\partial\nu}- \Gamma\frac{\partial u}{\partial\nu} \right )+\int_\Omega \Gamma \Delta u\]
+\end{theorem}
+
+\begin{remark}
+Form Green Representation Formula we know that $u$ is determined by its normal derivatives on $\partial\Omega$, prvided $\Delta u$ is given, in particular $u$ is harmonic.
+\end{remark}
+
+
+\begin{remark}
+Conversely, we cannot, however, obtain a harmonic fuction using this formula by giving an arbitary $\frac{\partial u}{\partial \nu}|_{\partial \Omega}$, because it must satisfy some constrains, say, at least,
+\[\int_{\partial \Omega}\frac{\partial u}{\partial \nu} =\int_\Omega \Delta u =0\]
+\end{remark}
+
+We now turn to another method.
+
+\begin{definition}[Green Fucntion]
+...
+\end{definition}
+
+\begin{remark}
+The idea of why we introduce Green function si unknown from this textbook.
+\end{remark}
+
+We suppose there do exist a Green function for $\Omega$, then by Green Representation Formula, we have
+
+\begin{equation}
+u = \int_{\partial \Omega} u \frac{\partial G}{\partial \nu} + \int_\Omega G\Delta u\label{eq:green2}
+\end{equation}
+
+\begin{remark}
+From (\ref{eq:green2}) we know that $u$ is determined by its value on the boundary, prvided $\Delta u$ is given, in particular $u$ is harmonic.
+\end{remark}
+
+\begin{remark}
+Under what condition can we  reconstruct $u$ by given $t|_{\partial \Omega}$ and $\Delta u$ is the next question.
+
+...
+\end{remark}
+
+Next, we turn to the Dirichlet Problem on a ball.
+
+
+\begin{equation}
+G(x,y):=\begin{cases}
+\Gamma(|x-y|)-\Gamma(\frac{|y|}{R}|x-\bar y|) & y\neq 0\\
+\Gamma(|x|)-\Gamma(R)& y= 0
+\end{cases}
+\end{equation}
+
+
+First of all, $G-\Gamma$ is harmonic
+
+Secondly,  ... $G(R)=0$
+
+Therefore $G(x,y)$ is a Green function of $B(0,R)$.
+
+Next we caculate $\frac{\partial G}{\partial \nu}$, ..., we have 
+\begin{equation}
+\frac{\partial G}{\partial \nu_x}=...=\frac{R^2-|y|^2}{d\omega_dR}\frac1{|x-y|^d}
+\end{equation}
+Then we can obtain the following theorem.
+
+\begin{theorem}[Poisson Representation Formula]
+...
+\begin{proof}
+
+the fact that $\Delta$  commutes with $\int$ leads to $u$ is harmonic about $y$.
+
+Next we show the continuity ...
+\end{proof}
+\end{theorem}
+
+\begin{corollary}[smoothness]
+u is real analytic on $\Omega$.
+\begin{proof}
+...
+\end{proof}
+\end{corollary}
+
+\begin{corollary}[uniqueness]
+...
+\begin{proof}
+...
+\end{proof}
+\end{corollary}
+
+
+\end{document}
